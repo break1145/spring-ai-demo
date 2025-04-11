@@ -21,10 +21,12 @@ If you manually switch to a different parent and actually want the inheritance, 
 
 ### demo
 1. 实现了基本的sse流推送。在[application.yaml](src%2Fmain%2Fresources%2Fapplication.yaml) 替换api-key，本地启动后调用 POST http://localhost:8080/chat/stream
-    Headers:
-    Content-Type: application/json
-    Accept: text/event-stream
-    Body:
-       {
-       "prompt": "评价一下丁真"
-       }
+```http request
+Headers:
+Content-Type: application/json
+Accept: text/event-stream
+Body:
+   {
+   "prompt": "评价一下丁真"
+   }
+```
